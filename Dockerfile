@@ -17,6 +17,7 @@ RUN cd client && npm install --legacy-peer-deps --loglevel=error
 # Copiar todos os arquivos
 COPY . .
 
+
 # Build do front-end com Vite
 RUN cd client && VITE_API_URL=http://bia-pipeline-lab.us-east-1.elasticbeanstalk.com npm run build
 
